@@ -34,14 +34,11 @@ public class ProdutoBean {
 		this.produto = produto;
 	}
 
-	public List<Produto> getProdutos() {
-		return produtos;
-	}
-
-	public void setProdutos(List<Produto> produtos) {
-		this.produtos = produtos;
-	}
 	
+	public void salvar(Produto produto){
+		produtos.add(produto);
+		
+	}
 	
 
 

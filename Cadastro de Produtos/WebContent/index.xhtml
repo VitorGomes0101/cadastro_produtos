@@ -18,10 +18,17 @@
 	<h:form>
 		<p:growl />
 		<p:panel header="Cadastro de Produtos">
-			<p:panelGrid columns="2">
-			<h:outputText value="Tipo de produto" />
-			<p:inputText value="#{produtoBean.produto.tipo}" />
+			<p:panelGrid columns="2" >
+				<h:outputText value="Tipo de produto:" />
+				<p:inputText value="#{produtoBean.produto.tipo}" />
+				<h:outputText value="Genero:" />
+				<p:inputText value="#{produtoBean.produto.genero}" />
+				<h:outputText value="Tamanho:" />
+				<p:inputText value="#{produtoBean.produto.tamanho}" />
+				<h:outputText value="Cor" />
+				<p:inputText value="#{produtoBean.produto.cor}" />
 			</p:panelGrid>
+			<p:commandButton action="#{produtoBean.salvar}" value="Salvar" update="@form"/>
 		</p:panel>
 	</h:form>
 
