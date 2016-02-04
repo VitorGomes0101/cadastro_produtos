@@ -23,7 +23,7 @@ public class ProdutoBean {
 		return "Hello World JSF!";
 	}
 	
-	//Variaveissssssssssss
+	//Variaveisssssssssssss
 	private Produto produto = new Produto();
 	private List<Produto> produtos = new ArrayList<Produto>();
 	
