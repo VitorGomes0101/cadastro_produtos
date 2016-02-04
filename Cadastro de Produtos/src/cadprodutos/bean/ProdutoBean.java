@@ -7,6 +7,7 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 
+import cadprodutos.dao.produtoDAO;
 import cadprodutos.modelo.Produto;
 
 @RequestScoped
@@ -37,6 +38,8 @@ public class ProdutoBean {
 	
 	public void salvar(Produto produto){
 		produtos.add(produto);
+		
+		new produtoDAO().salvar(produto);
 		
 	}
 	
